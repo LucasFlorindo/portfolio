@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: black;
+    --cor-secundaria: #F5F5F5;
+    --cor-terciaria: #28A65A;
+    --cor-hover: #272727;
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color:var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabeçalho {
+    /* sempre bom optar por porcentagem considerando q sempre vai operar a porcentagem referente a tela do usuário e não apenas um pixel ou outra medida */
+    padding: 2% 0% 0% 15%;
+}
+
+.cabeçalho__menu {
+    display: flex;
+    gap: 80px;
+
+}
+
+.cabeçalho__menu__link {
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.conteudo {
+    /* padding ao inves de margin para ter espaço para header */
+    padding: 6% 15%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo__texto {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.conteudo__texto__titulo {
+    font-size: 36px;
+    font-family: var(--font-primaria);
+}
+
+.titulo-destaque {
+    color:var(--cor-terciaria)
+}
+
+.conteudo__texto__p {
+    font-size: 24px;
+    font-family: var(--font-secundaria);
+}
+
+.conteudo__links__subtitulo{
+    font-family: var(--font-primaria) ;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.conteudo__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+
+}
+
+
+.conteudo__links__botao {
+    /* background-color: #28A65A; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    
+}
+    
+.conteudo__links__botao:hover {
+    background-color: var(--cor-hover);
+}
+
+.rodape {
+    color:var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+
